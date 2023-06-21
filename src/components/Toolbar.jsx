@@ -7,7 +7,7 @@ export default function Toolbar({ dogs, selectBreed }) {
                 <select className='select' defaultValue='title' onChange={selectBreed}>
                     <option disabled value='title'>-- Breeds --</option>
                     {dogs.map((dog) => (
-                        <option value={dog.name} key={dog.id}>
+                        <option className="option" value={dog.name} key={dog.id}>
                         {dog.name}
                         </option>
                     ))}

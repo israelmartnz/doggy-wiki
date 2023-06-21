@@ -17,6 +17,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin: 1em;
 }
 .app-title {
   font-size: 2.9em;
@@ -24,19 +26,17 @@ body {
   color: #fb9446;
   
   margin: 0;
-  padding: 0.3em 0;
   display: 0;
+}
+.app-logo {
+  width: auto;
+  height: 100%;
 }
 .loading-message{
   color: #fb9446;
 }
 .toolbar {
-  padding: 1em 1em;
-}
-.select {
-  border: none;
-  border-radius: 0.5em;
-  padding: 10px;
+  padding: 0 1em 1em 1em;
 }
 .card {
   display: flex;
@@ -63,7 +63,6 @@ body {
   min-width: 70%;
 
   margin: 1em;
-  overflow: scroll;
   border-radius: 1em;
 
   border: 2px solid #424242;
@@ -81,4 +80,56 @@ body {
   padding: 0;
   font-size: 0.8m;
   font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+
+  .card-info {
+    margin: 0 0.5em 0 0 ;
+  }
+
+  .card-image {
+    max-width: 100%;
+    min-width: 100%;
+
+    margin: 0;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+
+  .card-info {
+    margin: 0 0.5em 0 0 ;
+  }
+
+  .card-image {
+    max-width: 100%;
+    min-width: 100%;
+
+    margin: 0;
+    height: auto;
+  }
 }

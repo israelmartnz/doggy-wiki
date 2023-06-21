@@ -43,7 +43,7 @@ function App() {
   return (
     <>
       <header className='header'>
-        <img src={logo} alt='dog logo' />
+        <img className='app-logo' src={logo} alt='dog logo' />
         <h2 className='app-title'>Dog wiki</h2>
       </header>
       <main>
