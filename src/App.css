@@ -1,0 +1,64 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+.app-title {
+  font-size: 2.9em;
+  font-family: 'Palette Mosaic', cursive;
+  color: #fb4653;
+  
+  margin: 0;
+  padding-top: 0.5em;
+  display: 0;
+}
+.toolbar {
+  padding: 1em 1em;
+}
+.select {
+  border: none;
+  border-radius: 0.5em;
+  padding: 10px;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+
+  width: 50em;
+  height: 30em;
+  background-color: rgb(47, 47, 47);
+  border-radius: 1em;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 0.7em;
+  text-align: left;
+  gap: 0.5em;
+}
+.card-image {
+  max-width: 70%;
+  min-width: 70%;
+
+  padding: 1em;
+  overflow: scroll;
+  border-radius: 1.5em;
+}
+.info-title {
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #919191;
+}
