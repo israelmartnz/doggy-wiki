@@ -1,13 +1,7 @@
 export default function Toolbar({ dogs, selectBreed }) {
 
-    const hasDogs = dogs.length > 0
-
     return (
       <>
-        {
-            hasDogs
-            ? 
-            (
             <div className="toolbar">
                 <label>Choose a breed: </label>
                 <select className='select' defaultValue='title' onChange={selectBreed}>
@@ -19,12 +13,6 @@ export default function Toolbar({ dogs, selectBreed }) {
                     ))}
                 </select>
             </div>
-            )
-            : 
-            (
-                <p>Failed to load dogs list</p>
-            )
-        }
       </>
     );
   }

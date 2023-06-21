@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import logo from './assets/logo.svg'
 import Toolbar from './components/Toolbar'
 import Main from './components/Main'
 
@@ -41,18 +42,24 @@ function App() {
 
   return (
     <>
-      <h2 className='app-title'>Dog wiki</h2>
-      { loading
-      ? (
-        <p>Loading</p>
-      )
-      : (
-        <>
-          <Toolbar dogs={dogs} selectBreed={selectBreed} />
-          <Main breed={breed} showInfo={showInfo}/>
-        </>
-        )
-      }
+      <header className='header'>
+        <img src={logo} alt='dog logo' />
+        <h2 className='app-title'>Dog wiki</h2>
+      </header>
+      <main>
+        { loading
+        ? (
+            <p className='loading-message'>Loading</p>
+          )
+          : 
+          (
+            <>
+              <Toolbar dogs={dogs} selectBreed={selectBreed} />
+              <Main breed={breed} showInfo={showInfo}/>
+            </>
+          )
+        }
+      </main>
     </>
   )
 }
